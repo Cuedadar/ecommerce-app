@@ -45,7 +45,7 @@ function App() {
     console.log(products);
 
     return (
-        <div className="product-list">
+        <div>
             <ProductList products={products} key="1226"/>
         </div>
     )

@@ -2,36 +2,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(278px, 1fr)); /* Card width */
     grid-template-rows: 1fr;
-    gap: 1rem; /* Custom gap between cards */
-    justify-content: left; /* Align items to the left */
-    width: auto; /* Dynamically size to fit content */
-    margin: 0 auto; /* Center the grid */
+    gap: 1rem;
+    justify-content: left;
 }
-
-
-/*.listWrapper {*/
-/*    !*display: flex;*!*/
-/*    !*justify-content: center;*!*/
-/*    !*width: 100%;*!*/
-/*    !*box-sizing: border-box;*!*/
-/*    !*overflow: hidden;*!*/
-/*    !*margin: 0 auto;*!*/
-/*}*/
 
 @media screen and (min-width: 768px) {
     .list {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
     }
-
 }
 
 @media screen and (min-width: 1824px) {
     .list {
-        display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 1rem;
     }
 
 }
