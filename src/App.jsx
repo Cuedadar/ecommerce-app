@@ -139,9 +139,17 @@ function App() {
     ];
 
     return (
-        <div>
+        <>
+            {/*This will be a component*/}
+            <header className="header">
+                <nav>
+                    <h1>Canyon</h1>
+                </nav>
+            </header>
+        <main>
             <ProductList products={products} key="1226"/>
-        </div>
+        </main>
+        </>
     )
 }
 

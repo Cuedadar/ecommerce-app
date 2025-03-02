@@ -6,7 +6,21 @@
 }
 
 .header {
-  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 82px;
+}
+
+h1 {
   font-weight: bolder;
-  font-size: 1.5rem;
+}
+
+main {
+  margin-top: 50px;
 }
