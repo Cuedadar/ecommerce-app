@@ -1,7 +1,7 @@
 import styles from "./Footer.module.css";
 
 function Footer() {
-    return (<footer className={styles.footer}>
+    return (<footer>
             <div>
                 <p>&copy;2025 John King</p>
             </div>

@@ -1,4 +1,4 @@
-.header {
+header {
     display: flex;
     justify-content: center;
     background-color: #f9f9f9;
@@ -10,7 +10,7 @@
     height: 82px;
 }
 
-.nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -19,7 +19,7 @@
     padding: 0 2rem;
 }
 
-.navh {
+nav h1 {
     font-weight: bolder;
     padding-top: 15px;
 }
