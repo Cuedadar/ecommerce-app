@@ -1,9 +1,11 @@
-//import {useState} from 'react'
+import {useState} from "react";
 import './App.css'
 import ProductList from "./ProductList.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 
 function App() {
-    const products = [
+    const allProducts = [
         {
             name: "High-Performance Laptop",
             desc: "A sleek and powerful laptop designed for professionals and gamers alike. Equipped with the latest generation processors, high-speed SSD, and a stunning display for all your multitasking needs.",
@@ -138,17 +140,20 @@ function App() {
         }
     ];
 
+    const [products, setProducts] = useState(allProducts);
+
+    const handleFilter = (e) => {
+        let newProducts = allProducts.filter(product => product.name.toLowerCase().includes(e.target.value.toLowerCase()));
+        setProducts(newProducts);
+    }
+
     return (
         <>
-            {/*This will be a component*/}
-            <header className="header">
-                <nav>
-                    <h1><a href="#">Canyon</a></h1>
-                </nav>
-            </header>
-        <main>
-            <ProductList products={products} key="1226"/>
-        </main>
+            <Header handleFilter={handleFilter} />
+            <main>
+                <ProductList products={products} key="1226"/>
+            </main>
+            <Footer />
         </>
     )
 }
