@@ -143,7 +143,7 @@ function App() {
             {/*This will be a component*/}
             <header className="header">
                 <nav>
-                    <h1>Canyon</h1>
+                    <h1><a href="#">Canyon</a></h1>
                 </nav>
             </header>
         <main>
