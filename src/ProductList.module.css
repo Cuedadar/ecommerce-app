@@ -11,13 +11,13 @@
 @media screen and (min-width: 768px) {
     .list {
         grid-template-columns: repeat(3, 1fr);
-        max-width: calc((278px * 3) + 20px);
+        max-width: calc((300px * 3) + 20px);
     }
 }
 
 @media screen and (min-width: 1824px) {
     .list {
         grid-template-columns: repeat(5, 1fr);
-        max-width: calc((278px * 5) + 40px);
+        max-width: calc((300px * 5) + 40px);
     }
 }
