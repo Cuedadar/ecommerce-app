@@ -1,5 +1,5 @@
 import {useState} from "react";
-import './App.css'
+import styles from "./App.module.css";
 import ProductList from "./ProductList.jsx";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -150,7 +150,7 @@ function App() {
     return (
         <>
             <Header handleFilter={handleFilter} />
-            <main>
+            <main className={styles.main}>
                 <ProductList products={products} key="1226"/>
             </main>
             <Footer />

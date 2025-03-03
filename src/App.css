@@ -9,6 +9,7 @@
   width: 100%;
 }
 
-main {
+.main {
   margin: 50px auto;
+  padding-top: 50px;
 }
