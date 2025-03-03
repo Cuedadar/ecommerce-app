@@ -1,18 +1,23 @@
 .list {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Card width */
-    gap: 1rem;
-    justify-content: left;
+    gap: 10px;
+    justify-items: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
+/* Width of Card * number of Cards + total size of gap (numCards - 1) */
 @media screen and (min-width: 768px) {
     .list {
         grid-template-columns: repeat(3, 1fr);
+        max-width: calc((278px * 3) + 20px);
     }
 }
 
 @media screen and (min-width: 1824px) {
     .list {
         grid-template-columns: repeat(5, 1fr);
+        max-width: calc((278px * 5) + 40px);
     }
 }
